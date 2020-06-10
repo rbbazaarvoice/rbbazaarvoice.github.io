@@ -1,1 +1,40 @@
-Hello World
+<head>
+	<script async src="https://apps.bazaarvoice.com/deployments/alnatura/main_site/production/de_DE/bv.js"></script>
+</head>
+<body>
+	<!-- DCC Alnatura example-->
+	<script async type="text/javascript">
+            window.bvDCC = {
+              catalogData: {
+               locale: "de_DE",
+               catalogProducts: [{
+                  "productId":"221869",
+                  "productName":"Bergbauern-Camembert",
+                  "productImageURL":"https://www.alnatura.de/de-de/-/media/Images/Common/Alnatura-Product-Images/0001/4104420226586.jpg",
+                  "productPageURL":"https://www.alnatura.de/de-de/produkte/alle-produkte/milch-und-milchprodukte/kaese-und-frischkaese/kaese/bergbauern-camembert-221869/",
+		  categoryPath : [{
+                   "id" : "1",
+                   "Name" : "Produkte"
+                  }],         
+                  "eans":["4104420226586"]
+                }]
+                
+              }
+            };
+      
+            window.bvCallback = function (BV) {
+                BV.pixel.trackEvent("CatalogUpdate", {
+                    type: 'Product',
+                    locale: window.bvDCC.catalogData.locale,
+                    catalogProducts: window.bvDCC.catalogData.catalogProducts
+                });
+             }; 
+      </script>
+      <h2>rating_summary Alnatura example</h2>
+	<!-- rating_summary Alnatura example-->
+      <div data-bv-show="rating_summary" data-bv-product-id="221869"></div>
+      <h2>review container example Alnatura example</h2>
+    <!-- review container  Alnatura example-->
+      <div data-bv-show="reviews" data-bv-product-id="221869"></div>
+
+</body>
