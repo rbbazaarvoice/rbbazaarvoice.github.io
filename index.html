@@ -1,18 +1,7 @@
 <head>
+  <!-- bv.js script -->
   <script async src="https://apps.bazaarvoice.com/deployments/villeroy-boch-de/sfcc_deat/staging/de_AT/bv.js"></script>
- <!-- json+ld by rob = <script type="application/ld+json">
-    {"@context" : "https://schema.org",
-      "@type" : "Product",
-      "@id" : "https://rbbazaarvoice.github.io/index.html",
-      "name" : "villeroy-boch-de product",
-      "image" : "https://image.shutterstock.com/image-vector/example-stamp-vector-template-illustration-260nw-1362869099.jpg",
-      "description" : "this is the product description",
-      "sku" : "1485852662",
-      "brand" : "villeroy-boch-de"}
-
-       "aggregateRating":{"@type":"AggregateRating","ratingValue":0,"ratingCount":0,"reviewCount":0},
- </script> -->
-
+<!-- json+ld inserted by v&b -->
 <script type="application/ld+json">
  {"@context":"http://schema.org/",
  "@type":"Product",
@@ -28,6 +17,7 @@
  "offers":{"@type":"Offer","availability":"http://schema.org/InStock","price":14.9,"priceCurrency":"EUR"}
 }
 </script>
+<!-- add value of @id must be the product page url / remove aggreatedrating. BV Widgets will add this property -->
 
 </head>
 <body>
