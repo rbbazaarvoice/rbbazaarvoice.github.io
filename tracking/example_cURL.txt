@@ -1,0 +1,16 @@
+curl --request POST \
+  --url https://api.exponea.com/track/v2/projects/123412312312/customers/events \
+  --header 'Content-type: application/json' \
+  --header 'authorization: Basic <basic auth token>' \
+  --header 'content-type: application/json' \
+  --data '{"properties":{
+      "Item_id":        "productABC123",
+      "Item_name":      "Product ABC 123",
+      "Price":          21.99,
+      "Quantity":       3,
+      "Purchase_id":    "tx012312782",
+      "Item_on_sale":   true,
+      "product_name":   "testproduct"
+      },"event_type":"purchase_item"}'
+
+      

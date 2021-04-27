@@ -1,5 +1,0 @@
-curl --request POST \
-  --url https://api.exponea.com/track/v2/projects/projectToken/customers/events \
-  --header 'Content-type: application/json' \
-  --header 'authorization: Basic <basic auth token>' \
-  --header 'content-type: application/json'
